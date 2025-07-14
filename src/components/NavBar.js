@@ -1,8 +1,12 @@
 import React from "react";
 
-function NavBar() {
-  // update the JSX being returned!
-  return <nav>NavBar</nav>;
+const NavBar = () => {
+  return React.createElement('nav', null,
+    React.createElement('a', { href: '#home' }, 'home'),
+    React.createElement('a', {href : '#about'}, 'About')
+  )
+    
 }
+
 
 export default NavBar;
